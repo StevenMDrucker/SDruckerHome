@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import { Image, Row, Col } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 //const myText = require("../../../data/cv.md");
 const headShot = require("../../images/justheadmed.jpg");
 
@@ -36,7 +37,7 @@ export class CV extends React.Component<any, any> {
                             <Col lg={1} md={1} sm={1}></Col>
                             <Col lg={12} md={12} sm={12}>
                                 <div>
-                                    <ReactMarkdown source={this.state.info} />
+                                    <ReactMarkdown children={this.state.info} remarkPlugins={[remarkGfm]} />
                                 </div>
                             </Col>
 
