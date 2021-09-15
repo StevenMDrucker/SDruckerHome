@@ -24,7 +24,7 @@ Then copy contents of app directory to toplevel of steven-drucker.com
 * Update data in https://stevenmdrucker.github.io/ResearchContent/researchData.json
 * Add image to https://stevenmdrucker.github.io/ResearchContent/researchImages
 + To update Bio change https://stevenmdrucker.github.io/ResearchContent/Bio.md
-+ Currently CV needs to be editted in source and recompiled.
++ To update CV change https://stevenmdrucker.github.io/ResearchContent/CV.md
 
 
 
