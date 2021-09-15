@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Image, Row, Col } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-//const myText = require("../../../data/cv.md");
+// const myText = require("../../../data/cv.md");
 const headShot = require("../../images/justheadmed.jpg");
 
 
@@ -13,9 +13,9 @@ export class CV extends React.Component<any, any> {
         super(props);
         this.state = { info: null };
 
-        //fetch('https://gist.githubusercontent.com/StevenMDrucker/89d3aeba972f1f44bf7454928c12e117/raw/Bio.md')                
-        //fetch(myText)
+        //fetch('https://gist.githubusercontent.com/StevenMDrucker/89d3aeba972f1f44bf7454928c12e117/raw/Bio.md')                        
         fetch('https://stevenmdrucker.github.io/ResearchContent/CV.md')                  
+        // fetch('https://stevenmdrucker.github.io/ResearchContent/CV.test.md')                  
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Failed with HTTP code " + response.status);
@@ -23,6 +23,7 @@ export class CV extends React.Component<any, any> {
                 return (response.text())
             }).then(text => {
                 this.setState({ info: text })
+                // this.setState( {info: myText})
             });
     }
 
@@ -31,13 +32,13 @@ export class CV extends React.Component<any, any> {
             <div>
                 {/* <Col lg={2} md={2} sm={1}>
                  </Col> */}
-                <Col lg={8} md={8} sm={8}>
+                <Col lg={12} md={12} sm={12}>
                     <div className="cv">
                         <Row>
                             <Col lg={1} md={1} sm={1}></Col>
                             <Col lg={12} md={12} sm={12}>
                                 <div>
-                                    <ReactMarkdown children={this.state.info} remarkPlugins={[remarkGfm]} />
+                                    <ReactMarkdown children={this.state.info} remarkPlugins={[remarkGfm]} />                                    
                                 </div>
                             </Col>
 

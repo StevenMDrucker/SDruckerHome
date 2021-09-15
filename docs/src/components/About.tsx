@@ -36,7 +36,7 @@ export class About extends React.Component<any, any> {
                    <Col lg={3} md={4} sm={5}>
                        <Image src={headShot} responsive></Image>
                    </Col>
-                   <Col lg={7} md={6} sm={5}>
+                   <Col lg={9} md={8} sm={5}>
                        <div>                           
                            <ReactMarkdown children={this.state.info} remarkPlugins={[remarkGfm]} />
                         </div>

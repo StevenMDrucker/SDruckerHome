@@ -312,29 +312,86 @@ table {
   color: lightgray;
   font-size: 18px;
 }
+
 .cv p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
   color: black;
-}
-/* Title of the resume */
-.cv h1 {
-  font-size: 45px;
-  float: left;
-  color: black;
-  text-align:left;
-  margin-bottom:15px;
- 
 }
 
-/* Titles of categories */
+.cv li {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.cv h2{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cv h1+p { 
+	/*subtitle*/
+	font-style: italic;
+	font-size: 110%;
+}
+
 .cv h2 {
-  margin-top:50px;
-  color: #cf8a05;
-  font-size: 32px;
+	font-size: 1.0em;
+	color: #a00;
+  margin-top: 0px;
+  margin-bottom: 0px;
+	position: static;
+	top: 1.6em;
+	text-align: right;
+  width: 17%;
 }
 
-.cv h3 {  
-  color: #cf8a05;
-  font-size: 32px;
+.cv h2+p {
+		top: 0em;
+}
+
+.cv h3 {
+	font-size: 0.7em;
+	color: #a00;
+	line-height: 2em; 
+	position: relative;
+	top: 1.7em;
+	text-align: right;
+	width: 17%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.cv h3+p {
+  top: -5em;
+}
+
+.cv h4 {
+	font-size: 0.6em;
+	line-height: 0.8em; 	
+	position: relative;
+	top: 1.2em;
+	text-align: right;
+	width: 23%;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+.cv h5 {
+	font-size: 0.6em;
+	line-height: 0.2em; 	
+	position: relative;
+	top: 0em;
+	text-align: right;
+	width: 23%;
+	margin: 0;
+  color: black;
+}
+
+.cv h5+p {
+	margin: 0;
+	top: -.85em;	
 }
 /* There is a bar just before each category */
 
@@ -349,8 +406,20 @@ table {
   margin-left: 17%;
 }
 .cv p {
+  position: relative;
   margin-top:0;
-  margin-bottom:7px;
+  margin-bottom:9px;
+  left: 25%;
+  width: 65%;
+}
+
+.cv h4+p {
+  position: relative;
+  margin-top:0;
+  margin-bottom:0px;
+  left: 25%;
+  width: 65%;
+	top: -.2em;	
 }
 
 /* Blockquotes */
@@ -362,6 +431,7 @@ table {
 .cv a {
   color: blue;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .cv table a {
@@ -371,6 +441,7 @@ table {
 /* Horizontal separators */
 .cv hr {
   background:$background;
+  margin-bottom: 5px;
 }
 
 .cv table {
@@ -384,7 +455,7 @@ table {
   }
 
 .cv table th {
-  font-size: 48px;
+  font-size: 28px;
 }
 .cv h3+table th {
   font-size: 16px;
@@ -410,8 +481,14 @@ h3+table th {
   color: black;;
 }
 
+.cv ul {
+  position: relative;
+  left: 19%;
+  width: 80%;
+}
 .cv ul li {
-  list-style: none;
+  position: relative;  
+  padding-left: 1.25em;
 }
 
 .cv .li .li {
